@@ -12,13 +12,13 @@
             <div class="main-fields">
                 <div class="main-field" id="fromField">
                     <div class="main-pin"></div>
-                    <input id="from" FormControlName="from" placeholder="Откуда: начните вводить адрес" autocomplete="off" />
+                    <input id="from" formControlName="from" placeholder="Откуда: начните вводить адрес" autocomplete="off" />
                     <div class="main-ac" id="fromAc" role="listbox" aria-label="Подсказки адресов"></div>
                 </div>
 
                 <div class="main-field" id="toField">
                     <div class="main-pin"></div>
-                    <input id="to" FormControlName="to" placeholder="Куда: начните вводить адрес" autocomplete="off" />
+                    <input id="to" formControlName="to" placeholder="Куда: начните вводить адрес" autocomplete="off" />
                     <div class="main-ac" id="toAc" role="listbox" aria-label="Подсказки адресов"></div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                 <div class="main-block-info-row extra-info">
                     <div class="main-block-title">Дополнительная информация</div>
                     <div class="main-field textarea">
-                        <textarea id="comment" FormControlName="comment" placeholde r="Детали доставки и комментарии"></textarea>
+                        <textarea id="comment" formControlName="comment" placeholder="Детали доставки и комментарии"></textarea>
                     </div>
                 </div>
                 <button id="submit" class="button main-submit-request" type="button" [disabled]="!calculationResult() || orderForm.invalid" (click)="submitOrder()">Отправить
